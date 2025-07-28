@@ -1,6 +1,9 @@
 # Basic Website Visiting Plugin for LM Studio
 
-An LM Studio plugin that allows the assistant to view the links, image URLs and text content of web pages.
+An LM Studio plugin with two tools:
+
+- Visit Website - Allows the assistant to view the links, image URLs and text content of a given webpage.
+- View Images - Allows the assistant to download and display images from a list of image URLs.
 
 ## Installation
 
@@ -9,9 +12,9 @@ The plugin is available for download on the
 
 ![click the "Run in LM Studio" button](/docs/assets/how_to_install_on_lm_studio_hub.png)
 
-## Settings
+## Configuration
 
-![DuckDuckGo Search Tool Settings](/docs/assets/settings.png)
+![Visit Website Configuration](/docs/assets/configuration.png)
   
 ## How to use
 

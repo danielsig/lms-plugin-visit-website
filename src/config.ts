@@ -2,36 +2,39 @@ import { createConfigSchematics } from "@lmstudio/sdk";
 
 export const configSchematics = createConfigSchematics()
 	.field(
-		"max_links",
+		"maxLinks",
 		"numeric",
 		{
 			displayName: "Max Links",
-			min: 0,
+			min: -1,
 			max: 200,
-			subtitle: "Maximum number of links returned by the Visit Website tool",
+			int: true,
+			subtitle: "Maximum number of links returned by the Visit Website tool (0 = Exclude links, -1 = Auto)",
 		},
-		40
-)
+		-1
+	)
 	.field(
-		"max_images",
+		"maxImages",
 		"numeric",
 		{
 			displayName: "Max Images",
-			min: 0,
+			min: -1,
 			max: 200,
-			subtitle: "Maximum number of image URLs returned by the Visit Website tool",
+			int: true,
+			subtitle: "Maximum number of image URLs returned by the Visit Website tool (0 = Exclude image URLs, -1 = Auto)",
 		},
-		10
+		-1
 	)
 	.field(
-		"content_limit",
+		"contentLimit",
 		"numeric",
 		{
 			displayName: "Max Content",
-			min: 0,
+			min: -1,
 			max: 10_000,
-			subtitle: "Maximum content size returned by the Visit Website tool",
+			int: true,
+			subtitle: "Maximum content size returned by the Visit Website tool (0 = Exclude content, -1 = Auto)",
 		},
-		2000
+		-1
 	)
 	.build();
