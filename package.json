@@ -1,7 +1,7 @@
 {
   "name": "lms-plugin-visit-website",
-  "version": "1.0.0",
-  "description": "LM Studio plugin for visiting a website",
+  "version": "1.1.0",
+  "description": "LM Studio plugin for visiting websites",
   "main": "index.js",
   "scripts": {
     "dev": "lms dev",

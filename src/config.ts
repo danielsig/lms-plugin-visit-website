@@ -7,7 +7,7 @@ export const configSchematics = createConfigSchematics()
 		{
 			displayName: "Max Links",
 			min: -1,
-			max: 200,
+			max: 500,
 			int: true,
 			subtitle: "Maximum number of links returned by the Visit Website tool (0 = Exclude links, -1 = Auto)",
 		},
@@ -19,9 +19,9 @@ export const configSchematics = createConfigSchematics()
 		{
 			displayName: "Max Images",
 			min: -1,
-			max: 200,
+			max: 500,
 			int: true,
-			subtitle: "Maximum number of image URLs returned by the Visit Website tool (0 = Exclude image URLs, -1 = Auto)",
+			subtitle: "Maximum number of images downloaded and returned by the Visit Website tool (0 = Exclude images, -1 = Auto)",
 		},
 		-1
 	)
@@ -31,9 +31,9 @@ export const configSchematics = createConfigSchematics()
 		{
 			displayName: "Max Content",
 			min: -1,
-			max: 10_000,
+			max: 50_000,
 			int: true,
-			subtitle: "Maximum content size returned by the Visit Website tool (0 = Exclude content, -1 = Auto)",
+			subtitle: "Maximum text content size returned by the Visit Website tool (0 = Exclude text content, -1 = Auto)",
 		},
 		-1
 	)
